@@ -1,0 +1,17 @@
+
+import json
+import os
+from deep_translator import MyMemoryTranslator
+
+def englishToFrench(englishText):
+    #write the code here
+    frenchText = MyMemoryTranslator(source='en', target='fr').translate(englishText)
+    print(frenchText)
+    return frenchText
+    
+def frenchToEnglish(frenchText):
+    #write the code here
+    englishText = MyMemoryTranslator(source='fr', target='en').translate(frenchText)
+    print(englishText)
+    return englishText
+
